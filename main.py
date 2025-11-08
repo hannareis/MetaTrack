@@ -1,5 +1,5 @@
 # ======================================================
-# Projeto: MetaTrack
+# Projeto: Meta
 # Autor: Hannna Nunes Reis
 # Linguagem: Python
 # Paradigmas: Imperativo, Funcional e Orientado a Objetos
@@ -48,7 +48,7 @@ def main():
     notas = []
     while True:
         nota = input("Digite uma nota (ou pressione Enter para parar): ")
-        if nota == "":
+        if not nota or total_avaliacoes == len(notas) :
             break
         notas.append(float(nota))
 
