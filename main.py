@@ -46,11 +46,15 @@ def main():
     media_minima = float(input("Qual é a média mínima para aprovação? "))
 
     notas = []
+    print(f"\nDigite até {total_avaliacoes} notas (pressione Enter sem digitar nada para encerrar):")
+
     while True:
         nota = input("Digite uma nota (ou pressione Enter para parar): ")
-        if not nota or total_avaliacoes == len(notas) :
+        if not nota:
             break
         notas.append(float(nota))
+        if len(notas) >= total_avaliacoes:
+            break
 
     estudante = Estudante(nome, notas, media_minima)
 
@@ -66,7 +70,6 @@ def main():
         print("✅ Já atingiu a média mínima! Parabéns!")
     else:
         print("📘 Continue se esforçando — ainda dá tempo de alcançar a média!")
-
 
 # Execução principal
 if __name__ == "__main__":
