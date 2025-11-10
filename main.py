@@ -32,9 +32,9 @@ class Estudante:
 
 
 # --- Paradigma Funcional ---
-def filtrar_estudantes_aprovados(estudantes, media_minima):
-    """Filtra os estudantes que já atingiram a média mínima."""
-    return list(filter(lambda e: e.calcular_media_atual() >= media_minima, estudantes))
+# def filtrar_estudantes_aprovados(estudantes, media_minima):
+#     """Filtra os estudantes que já atingiram a média mínima."""
+#     return list(filter(lambda e: e.calcular_media_atual() >= media_minima, estudantes))
 
 
 # --- Paradigma Imperativo ---
